@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(to right, purple , rgb(9, 9, 83))
+}
+
+#pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+#cards{
+    width: 20%;
+    min-width: 200px;
+    height: 300px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+#cards:hover{
+    transform: scale(1.1);
+}
+
+.input-group{
+    position: relative;
+}
+
+#btn{
+    position: absolute;
+    right: -40px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-right: none;
+}
+
+#img, #body{
+    text-align: center;
+}
+
+.card-img-top img{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#body h3{
+    font-weight: bold;
+}
+
+#body{
+    padding-top: 0;
+}
+
+#img{
+    padding-top: 1rem;
+}
+
+.filtered{
+    display: none;
+}
